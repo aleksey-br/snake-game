@@ -136,7 +136,7 @@ function press(type) {
 
 const isLife = () => {
   console.log(appleCount, life.length);
-  if (appleCount < 3) {
+  if (appleCount < 10) {
     life[appleCount - 1].style.opacity = "1";
   } else {
     gameBtn.style.display = "block";
