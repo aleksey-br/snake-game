@@ -10,10 +10,12 @@
   },
   "devDependencies": {
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vite-plugin-html": "^3.2.0"
   },
   "dependencies": {
     "material-design-icons-iconfont": "^6.7.0",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "vite-plugin-commonjs": "^0.8.0"
   }
 }

@@ -1,198 +1,198 @@
-$material-design-icons-font-directory-path: "material-design-icons-iconfont/dist/fonts/";
-@import "material-design-icons-iconfont/src/material-design-icons";
+// $material-design-icons-font-directory-path: "material-design-icons-iconfont/dist/fonts/";
+// @import "material-design-icons-iconfont/src/material-design-icons";
 
-@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+// @import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
 
 body {
   font-family: "Fira Code";
   background: #011627;
 }
 
-.game {
-  width: 510px;
-  height: 475px;
-  margin: auto;
-  display: flex;
-  gap: 24px;
-  position: relative;
-  padding: 35px 30px;
-  background: linear-gradient(
-    144deg,
-    rgba(23, 85, 83, 1) 0%,
-    rgba(67, 217, 173, 0.14) 70%
-  );
-  border-radius: 10px;
-  outline: 1px solid #0c1616;
+// .game {
+//   width: 510px;
+//   height: 475px;
+//   margin: auto;
+//   display: flex;
+//   gap: 24px;
+//   position: relative;
+//   padding: 35px 30px;
+//   background: linear-gradient(
+//     144deg,
+//     rgba(23, 85, 83, 1) 0%,
+//     rgba(67, 217, 173, 0.14) 70%
+//   );
+//   border-radius: 10px;
+//   outline: 1px solid #0c1616;
 
-  &__bolt {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border-radius: 14px;
-    border: 1px solid #114944;
-    background: radial-gradient(
-      circle at 50% 50%,
-      rgba(25, 108, 106, 1) 0%,
-      rgba(17, 75, 74, 1) 100%
-    );
-    filter: drop-shadow(2px 2px 4px #0d4341);
-    box-shadow: 0 1px 2px #1f8177;
+//   &__bolt {
+//     position: absolute;
+//     width: 14px;
+//     height: 14px;
+//     border-radius: 14px;
+//     border: 1px solid #114944;
+//     background: radial-gradient(
+//       circle at 50% 50%,
+//       rgba(25, 108, 106, 1) 0%,
+//       rgba(17, 75, 74, 1) 100%
+//     );
+//     filter: drop-shadow(2px 2px 4px #0d4341);
+//     box-shadow: 0 1px 2px #1f8177;
 
-    &::after {
-      content: "";
-      width: 10px;
-      height: 2px;
-      position: absolute;
-      top: 6px;
-      left: 2px;
-      background: #114944;
-      transform: rotate(45deg);
-    }
-    &::before {
-      content: "";
-      width: 10px;
-      height: 2px;
-      position: absolute;
-      top: 6px;
-      left: 2px;
-      background: #114944;
-      transform: rotate(-45deg);
-    }
+//     &::after {
+//       content: "";
+//       width: 10px;
+//       height: 2px;
+//       position: absolute;
+//       top: 6px;
+//       left: 2px;
+//       background: #114944;
+//       transform: rotate(45deg);
+//     }
+//     &::before {
+//       content: "";
+//       width: 10px;
+//       height: 2px;
+//       position: absolute;
+//       top: 6px;
+//       left: 2px;
+//       background: #114944;
+//       transform: rotate(-45deg);
+//     }
 
-    &:nth-of-type(1) {
-      top: 12px;
-      left: 12px;
-    }
-    &:nth-of-type(2) {
-      top: 12px;
-      right: 12px;
-    }
-    &:nth-of-type(3) {
-      bottom: 12px;
-      left: 12px;
-    }
-    &:nth-of-type(4) {
-      bottom: 12px;
-      right: 12px;
-    }
-  }
+//     &:nth-of-type(1) {
+//       top: 12px;
+//       left: 12px;
+//     }
+//     &:nth-of-type(2) {
+//       top: 12px;
+//       right: 12px;
+//     }
+//     &:nth-of-type(3) {
+//       bottom: 12px;
+//       left: 12px;
+//     }
+//     &:nth-of-type(4) {
+//       bottom: 12px;
+//       right: 12px;
+//     }
+//   }
 
-  // .game__col
-  &__col {
-    width: 50%;
+//   // .game__col
+//   &__col {
+//     width: 50%;
 
-    position: relative;
-  }
+//     position: relative;
+//   }
 
-  &__game-button {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    color: #43d9ad;
-    padding: 10px 0;
-    text-align: center;
-    background: #011627;
-    cursor: pointer;
-    width: 240px;
-  }
-  // .game__setting
-  &__setting {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background: rgba(1, 20, 35, 19%);
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+//   &__game-button {
+//     position: absolute;
+//     bottom: 100px;
+//     left: 0;
+//     color: #43d9ad;
+//     padding: 10px 0;
+//     text-align: center;
+//     background: #011627;
+//     cursor: pointer;
+//     width: 240px;
+//   }
+//   // .game__setting
+//   &__setting {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 15px;
+//     background: rgba(1, 20, 35, 19%);
+//     border-radius: 8px;
+//     margin-bottom: 20px;
+//   }
 
-  // .game__setting-description
-  &__setting-description {
-    color: #fff;
-  }
-  // .game__arrow-group
-  &__arrow-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    padding-top: 15px;
-  }
-  // .game__arrow
-  &__arrow {
-    &:first-child {
-      width: 100%;
-      text-align: center;
-    }
-  }
-  // .game__life
-  &__life {
-  }
-}
+//   // .game__setting-description
+//   &__setting-description {
+//     color: #fff;
+//   }
+//   // .game__arrow-group
+//   &__arrow-group {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 5px;
+//     justify-content: center;
+//     padding-top: 15px;
+//   }
+//   // .game__arrow
+//   &__arrow {
+//     &:first-child {
+//       width: 100%;
+//       text-align: center;
+//     }
+//   }
+//   // .game__life
+//   &__life {
+//   }
+// }
 
-.canvas {
-  background: rgb(1, 22, 39, 84%);
-  border-radius: 10px;
-  flex: 1 1 auto;
-}
+// .canvas {
+//   background: rgb(1, 22, 39, 84%);
+//   border-radius: 10px;
+//   flex: 1 1 auto;
+// }
 
-.arrow {
-  // .arrow__icon
-  &__icon {
-    width: 49px;
-    height: 28px;
-    background: #010c15;
-    border-radius: 8px;
-    color: #fff;
-    border: 1px solid #1e2d3d;
-    cursor: pointer;
+// .arrow {
+//   // .arrow__icon
+//   &__icon {
+//     width: 49px;
+//     height: 28px;
+//     background: #010c15;
+//     border-radius: 8px;
+//     color: #fff;
+//     border: 1px solid #1e2d3d;
+//     cursor: pointer;
 
-    &:active {
-      background: #2a2d30;
-    }
-  }
-}
+//     &:active {
+//       background: #2a2d30;
+//     }
+//   }
+// }
 
-.life {
-  // .life__title
-  &__title {
-    color: #fff;
-    margin-bottom: 22px;
-    margin-top: 0;
-  }
-  // .life__circle-group
-  &__circle-group {
-    display: grid;
-    grid-template-columns: repeat(5, 20px);
-    gap: 22px;
-  }
-}
-.life_circle {
-  width: 8px;
-  height: 8px;
-  display: block;
-  background: #43d9ad;
-  border-radius: 8px;
-  position: relative;
-  opacity: 0.5;
+// .life {
+//   // .life__title
+//   &__title {
+//     color: #fff;
+//     margin-bottom: 22px;
+//     margin-top: 0;
+//   }
+//   // .life__circle-group
+//   &__circle-group {
+//     display: grid;
+//     grid-template-columns: repeat(5, 20px);
+//     gap: 22px;
+//   }
+// }
+// .life_circle {
+//   width: 8px;
+//   height: 8px;
+//   display: block;
+//   background: #43d9ad;
+//   border-radius: 8px;
+//   position: relative;
+//   opacity: 0.5;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 14px;
-    height: 14px;
-    background: rgb(67, 217, 173, 60%);
-    border-radius: 14px;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 20px;
-    height: 20px;
-    background: rgb(67, 217, 173, 30%);
-    border-radius: 14px;
-  }
-}
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: -3px;
+//     left: -3px;
+//     width: 14px;
+//     height: 14px;
+//     background: rgb(67, 217, 173, 60%);
+//     border-radius: 14px;
+//   }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: -6px;
+//     left: -6px;
+//     width: 20px;
+//     height: 20px;
+//     background: rgb(67, 217, 173, 30%);
+//     border-radius: 14px;
+//   }
+// }
